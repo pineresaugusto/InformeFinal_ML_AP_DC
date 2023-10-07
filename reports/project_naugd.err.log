@@ -36,14 +36,178 @@ from tensorflow.keras.models import load_model
 ------------------
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-[1;32m~\AppData\Local\Temp/ipykernel_119924/1135909557.py[0m in [0;36m<module>[1;34m[0m
-[0;32m     11[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mmodels[0m [1;32mimport[0m [0mSequential[0m[1;33m[0m[1;33m[0m[0m
-[0;32m     12[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mlayers[0m [1;32mimport[0m [0mDense[0m[1;33m,[0m [0mLSTM[0m[1;33m,[0m [0mDropout[0m[1;33m,[0m [0mGRU[0m[1;33m[0m[1;33m[0m[0m
-[1;32m---> 13[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mwrappers[0m[1;33m.[0m[0mscikit_learn[0m [1;32mimport[0m [0mKerasRegressor[0m[1;33m[0m[1;33m[0m[0m
-[0m[0;32m     14[0m [1;32mimport[0m [0mpickle[0m[1;33m[0m[1;33m[0m[0m
-[0;32m     15[0m [1;32mimport[0m [0mglob[0m[1;33m[0m[1;33m[0m[0m
+[1;31mTypeError[0m                                 Traceback (most recent call last)
+[1;32m~\AppData\Local\Temp/ipykernel_137184/1135909557.py[0m in [0;36m<module>[1;34m[0m
+[0;32m      9[0m [1;32mfrom[0m [0msklearn[0m[1;33m.[0m[0mmetrics[0m [1;32mimport[0m [0mmean_squared_error[0m[1;33m,[0m [0mmean_absolute_percentage_error[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     10[0m [1;32mfrom[0m [0msklearn[0m[1;33m.[0m[0mmodel_selection[0m [1;32mimport[0m [0mtrain_test_split[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 11[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mmodels[0m [1;32mimport[0m [0mSequential[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     12[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mlayers[0m [1;32mimport[0m [0mDense[0m[1;33m,[0m [0mLSTM[0m[1;33m,[0m [0mDropout[0m[1;33m,[0m [0mGRU[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     13[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mwrappers[0m[1;33m.[0m[0mscikit_learn[0m [1;32mimport[0m [0mKerasRegressor[0m[1;33m[0m[1;33m[0m[0m
 
-[1;31mModuleNotFoundError[0m: No module named 'keras.wrappers'
-ModuleNotFoundError: No module named 'keras.wrappers'
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     18[0m [1;33m[[0m[0mkeras[0m[1;33m.[0m[0mio[0m[1;33m][0m[1;33m([0m[0mhttps[0m[1;33m:[0m[1;33m//[0m[0mkeras[0m[1;33m.[0m[0mio[0m[1;33m)[0m[1;33m.[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     19[0m """
+[1;32m---> 20[1;33m [1;32mfrom[0m [0mkeras[0m [1;32mimport[0m [0mdistribute[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     21[0m [1;32mfrom[0m [0mkeras[0m [1;32mimport[0m [0mmodels[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     22[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mengine[0m[1;33m.[0m[0minput_layer[0m [1;32mimport[0m [0mInput[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\distribute\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     16[0m [1;33m[0m[0m
+[0;32m     17[0m [1;33m[0m[0m
+[1;32m---> 18[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mdistribute[0m [1;32mimport[0m [0msidecar_evaluator[0m[1;33m[0m[1;33m[0m[0m
+[0m
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\distribute\sidecar_evaluator.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     15[0m [1;34m"""Python module for evaluation loop."""[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     16[0m [1;33m[0m[0m
+[1;32m---> 17[1;33m [1;32mimport[0m [0mtensorflow[0m[1;33m.[0m[0mcompat[0m[1;33m.[0m[0mv2[0m [1;32mas[0m [0mtf[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     18[0m [1;33m[0m[0m
+[0;32m     19[0m [1;31m# isort: off[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\tensorflow\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m    476[0m   [1;31m# See b/196254385 for more details.[0m[1;33m[0m[1;33m[0m[0m
+[0;32m    477[0m   [1;32mtry[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
+[1;32m--> 478[1;33m     [0mimportlib[0m[1;33m.[0m[0mimport_module[0m[1;33m([0m[1;34m"keras.optimizers"[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m    479[0m   [1;32mexcept[0m [1;33m([0m[0mImportError[0m[1;33m,[0m [0mAttributeError[0m[1;33m)[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
+[0;32m    480[0m     [1;32mpass[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\importlib\__init__.py[0m in [0;36mimport_module[1;34m(name, package)[0m
+[0;32m    125[0m                 [1;32mbreak[0m[1;33m[0m[1;33m[0m[0m
+[0;32m    126[0m             [0mlevel[0m [1;33m+=[0m [1;36m1[0m[1;33m[0m[1;33m[0m[0m
+[1;32m--> 127[1;33m     [1;32mreturn[0m [0m_bootstrap[0m[1;33m.[0m[0m_gcd_import[0m[1;33m([0m[0mname[0m[1;33m[[0m[0mlevel[0m[1;33m:[0m[1;33m][0m[1;33m,[0m [0mpackage[0m[1;33m,[0m [0mlevel[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m    128[0m [1;33m[0m[0m
+[0;32m    129[0m [1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\optimizers\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     23[0m [1;33m[0m[0m
+[0;32m     24[0m [1;31m# Imports needed for deserialization.[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 25[1;33m [1;32mfrom[0m [0mkeras[0m [1;32mimport[0m [0mbackend[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     26[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0moptimizers[0m[1;33m.[0m[0mlegacy[0m [1;32mimport[0m [0madadelta[0m [1;32mas[0m [0madadelta_legacy[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     27[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0moptimizers[0m[1;33m.[0m[0mlegacy[0m [1;32mimport[0m [0madagrad[0m [1;32mas[0m [0madagrad_legacy[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\backend\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m      1[0m [1;34m"""AUTOGENERATED. DO NOT EDIT."""[0m[1;33m[0m[1;33m[0m[0m
+[0;32m      2[0m [1;33m[0m[0m
+[1;32m----> 3[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mbackend[0m [1;32mimport[0m [0mexperimental[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m      4[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mbackend[0m [1;32mimport[0m [0mabs[0m[1;33m[0m[1;33m[0m[0m
+[0;32m      5[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mbackend[0m [1;32mimport[0m [0mall[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\backend\experimental\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m      1[0m [1;34m"""AUTOGENERATED. DO NOT EDIT."""[0m[1;33m[0m[1;33m[0m[0m
+[0;32m      2[0m [1;33m[0m[0m
+[1;32m----> 3[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mbackend[0m [1;32mimport[0m [0mdisable_tf_random_generator[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m      4[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mbackend[0m [1;32mimport[0m [0menable_tf_random_generator[0m[1;33m[0m[1;33m[0m[0m
+[0;32m      5[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mbackend[0m [1;32mimport[0m [0mis_tf_random_generator_enabled[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     19[0m """
+[0;32m     20[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m [1;32mimport[0m [0mdistribute[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 21[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m [1;32mimport[0m [0mmodels[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     22[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m[1;33m.[0m[0minput_layer[0m [1;32mimport[0m [0mInput[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     23[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m[1;33m.[0m[0msequential[0m [1;32mimport[0m [0mSequential[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\models\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     16[0m [1;33m[0m[0m
+[0;32m     17[0m [1;33m[0m[0m
+[1;32m---> 18[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m[1;33m.[0m[0mfunctional[0m [1;32mimport[0m [0mFunctional[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     19[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m[1;33m.[0m[0msequential[0m [1;32mimport[0m [0mSequential[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     20[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m[1;33m.[0m[0mtraining[0m [1;32mimport[0m [0mModel[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\engine\functional.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     23[0m [1;32mimport[0m [0mtensorflow[0m[1;33m.[0m[0mcompat[0m[1;33m.[0m[0mv2[0m [1;32mas[0m [0mtf[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     24[0m [1;33m[0m[0m
+[1;32m---> 25[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m [1;32mimport[0m [0mbackend[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     26[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mdtensor[0m [1;32mimport[0m [0mlayout_map[0m [1;32mas[0m [0mlayout_map_lib[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     27[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m [1;32mimport[0m [0mbase_layer[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\backend.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     33[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mdistribute[0m [1;32mimport[0m [0mdistribute_coordinator_utils[0m [1;32mas[0m [0mdc[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     34[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mdtensor[0m [1;32mimport[0m [0mdtensor_api[0m [1;32mas[0m [0mdtensor[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 35[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m [1;32mimport[0m [0mkeras_tensor[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     36[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mutils[0m [1;32mimport[0m [0mcontrol_flow_util[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     37[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mutils[0m [1;32mimport[0m [0mobject_identity[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\engine\keras_tensor.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     17[0m [1;32mimport[0m [0mtensorflow[0m[1;33m.[0m[0mcompat[0m[1;33m.[0m[0mv2[0m [1;32mas[0m [0mtf[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     18[0m [1;33m[0m[0m
+[1;32m---> 19[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mutils[0m [1;32mimport[0m [0mobject_identity[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     20[0m [1;33m[0m[0m
+[0;32m     21[0m [1;31m# isort: off[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\utils\__init__.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     51[0m [1;33m[0m[0m
+[0;32m     52[0m [1;31m# Preprocessing utils[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 53[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mutils[0m[1;33m.[0m[0mfeature_space[0m [1;32mimport[0m [0mFeatureSpace[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     54[0m [1;33m[0m[0m
+[0;32m     55[0m [1;31m# Internal[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\utils\feature_space.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     18[0m [1;33m[0m[0m
+[0;32m     19[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m [1;32mimport[0m [0mbackend[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 20[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m [1;32mimport[0m [0mbase_layer[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     21[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m [1;32mimport[0m [0msaving_lib[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     22[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m [1;32mimport[0m [0mserialization_lib[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\engine\base_layer.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     41[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mmixed_precision[0m [1;32mimport[0m [0mpolicy[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     42[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m [1;32mimport[0m [0mserialization_lib[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 43[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0mlayer_serialization[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     44[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mutils[0m [1;32mimport[0m [0mgeneric_utils[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     45[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mutils[0m [1;32mimport[0m [0mlayer_utils[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\saving\legacy\saved_model\layer_serialization.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     21[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0mbase_serialization[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     22[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0mconstants[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 23[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0msave_impl[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     24[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0mserialized_attributes[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     25[0m [1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\saving\legacy\saved_model\save_impl.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     32[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m [1;32mimport[0m [0msaving_utils[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     33[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0mconstants[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 34[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0mload[0m [1;32mas[0m [0mkeras_load[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     35[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0mserialized_attributes[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     36[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m[1;33m.[0m[0mlegacy[0m[1;33m.[0m[0msaved_model[0m [1;32mimport[0m [0mutils[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\saving\legacy\saved_model\load.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     27[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0mengine[0m [1;32mimport[0m [0minput_spec[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     28[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0moptimizers[0m[1;33m.[0m[0mlegacy[0m [1;32mimport[0m [0moptimizer_v2[0m[1;33m[0m[1;33m[0m[0m
+[1;32m---> 29[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mprotobuf[0m [1;32mimport[0m [0msaved_metadata_pb2[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     30[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mprotobuf[0m [1;32mimport[0m [0mversions_pb2[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     31[0m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0msrc[0m[1;33m.[0m[0msaving[0m [1;32mimport[0m [0mobject_registration[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\protobuf\saved_metadata_pb2.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     14[0m [1;33m[0m[0m
+[0;32m     15[0m [1;33m[0m[0m
+[1;32m---> 16[1;33m [1;32mfrom[0m [0mkeras[0m[1;33m.[0m[0mprotobuf[0m [1;32mimport[0m [0mversions_pb2[0m [1;32mas[0m [0mkeras_dot_protobuf_dot_versions__pb2[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m     17[0m [1;33m[0m[0m
+[0;32m     18[0m [1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\keras\protobuf\versions_pb2.py[0m in [0;36m<module>[1;34m[0m
+[0;32m     34[0m   [0mcontaining_type[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     35[0m   fields=[
+[1;32m---> 36[1;33m     _descriptor.FieldDescriptor(
+[0m[0;32m     37[0m       [0mname[0m[1;33m=[0m[1;34m'producer'[0m[1;33m,[0m [0mfull_name[0m[1;33m=[0m[1;34m'third_party.py.keras.protobuf.VersionDef.producer'[0m[1;33m,[0m [0mindex[0m[1;33m=[0m[1;36m0[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     38[0m       [0mnumber[0m[1;33m=[0m[1;36m1[0m[1;33m,[0m [0mtype[0m[1;33m=[0m[1;36m5[0m[1;33m,[0m [0mcpp_type[0m[1;33m=[0m[1;36m1[0m[1;33m,[0m [0mlabel[0m[1;33m=[0m[1;36m1[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\google\protobuf\descriptor.py[0m in [0;36m__new__[1;34m(cls, name, full_name, index, number, type, cpp_type, label, default_value, message_type, enum_type, containing_type, is_extension, extension_scope, options, serialized_options, has_default_value, containing_oneof, json_name, file, create_key)[0m
+[0;32m    559[0m                 [0mhas_default_value[0m[1;33m=[0m[1;32mTrue[0m[1;33m,[0m [0mcontaining_oneof[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m [0mjson_name[0m[1;33m=[0m[1;32mNone[0m[1;33m,[0m[1;33m[0m[1;33m[0m[0m
+[0;32m    560[0m                 file=None, create_key=None):  # pylint: disable=redefined-builtin
+[1;32m--> 561[1;33m       [0m_message[0m[1;33m.[0m[0mMessage[0m[1;33m.[0m[0m_CheckCalledFromGeneratedFile[0m[1;33m([0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m    562[0m       [1;32mif[0m [0mis_extension[0m[1;33m:[0m[1;33m[0m[1;33m[0m[0m
+[0;32m    563[0m         [1;32mreturn[0m [0m_message[0m[1;33m.[0m[0mdefault_pool[0m[1;33m.[0m[0mFindExtensionByName[0m[1;33m([0m[0mfull_name[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+
+[1;31mTypeError[0m: Descriptors cannot not be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+TypeError: Descriptors cannot not be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
 

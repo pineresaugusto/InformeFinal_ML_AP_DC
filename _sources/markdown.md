@@ -21,7 +21,7 @@ Outliers can skew the results of the forecasting process, so it is important to 
 
 ### Split the data into training and testing sets.
 
-The training set is used to train the forecasting model, while the testing set is used to evaluate the performance of the model on unseen data. This helps to ensure that the model is able to generalize to new data. A common split is to use 70% of the data for training and 30% of the data for testing. We used 70% of our time series as a training data set and then split the remaining 30% as a validation set and testing set. The validation set is used to tune parameters to optimize every model and then the testing set is used to correctly evaluate the model performance. 
+The training set is used to train the forecasting model, while the testing set is used to evaluate the performance of the model on unseen data. This helps to ensure that the model is able to generalize to new data. A common split is to use 70% of the data for training and 30% of the data for testing. We used 80% of our time series as a training data set and then split the remaining 20% as a testing set.  
 
 ### Data Augmentation
 Generate new data points by averaging the next day's forecasted value with the previous day's true data value.

@@ -449,15 +449,173 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_121192</span><span class="o">/</span><span class="mf">692206779.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_119300</span><span class="o">/</span><span class="mf">692206779.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_percentage_error</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="ne">---&gt; </span><span class="mi">12</span> <span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
 <span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">LSTM</span><span class="p">,</span> <span class="n">Dropout</span><span class="p">,</span> <span class="n">GRU</span>
-<span class="ne">---&gt; </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">keras.wrappers.scikit_learn</span> <span class="kn">import</span> <span class="n">KerasRegressor</span>
-<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="kn">import</span> <span class="nn">pickle</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="kn">import</span> <span class="nn">glob</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">keras.wrappers.scikit_learn</span> <span class="kn">import</span> <span class="n">KerasRegressor</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;keras.wrappers&#39;
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="p">[</span><span class="n">keras</span><span class="o">.</span><span class="n">io</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">keras</span><span class="o">.</span><span class="n">io</span><span class="p">)</span><span class="o">.</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="sd">&quot;&quot;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">20</span><span class="sd"> from keras import distribute</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span><span class="sd"> from keras import models</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span><span class="sd"> from keras.engine.input_layer import Input</span>
+
+<span class="sd">~\miniconda3\envs\ml_venv\lib\site-packages\keras\distribute\__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span><span class="sd"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span><span class="sd"> </span>
+<span class="ne">---&gt; </span><span class="mi">18</span><span class="sd"> from keras.distribute import sidecar_evaluator</span>
+
+<span class="sd">~\miniconda3\envs\ml_venv\lib\site-packages\keras\distribute\sidecar_evaluator.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span><span class="sd"> &quot;&quot;&quot;</span><span class="n">Python</span> <span class="n">module</span> <span class="k">for</span> <span class="n">evaluation</span> <span class="n">loop</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span><span class="s2"> </span>
+<span class="ne">---&gt; </span><span class="mi">17</span><span class="s2"> import tensorflow.compat.v2 as tf</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span><span class="s2"> # isort: off</span>
+
+<span class="s2">~\miniconda3\envs\ml_venv\lib\site-packages</span><span class="se">\t</span><span class="s2">ensorflow\__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">    </span><span class="mi">476</span><span class="s2">   # See b/196254385 for more details.</span>
+<span class="g g-Whitespace">    </span><span class="mi">477</span><span class="s2">   try:</span>
+<span class="ne">--&gt; </span><span class="mi">478</span><span class="s2">     importlib.import_module(&quot;keras.optimizers&quot;)</span>
+<span class="g g-Whitespace">    </span><span class="mi">479</span><span class="s2">   except (ImportError, AttributeError):</span>
+<span class="g g-Whitespace">    </span><span class="mi">480</span><span class="s2">     pass</span>
+
+<span class="nn">~\miniconda3\envs\ml_venv\lib\importlib\__init__.py</span> in <span class="ni">import_module</span><span class="nt">(name, package)</span>
+<span class="g g-Whitespace">    </span><span class="mi">125</span><span class="s2">                 break</span>
+<span class="g g-Whitespace">    </span><span class="mi">126</span><span class="s2">             level += 1</span>
+<span class="ne">--&gt; </span><span class="mi">127</span><span class="s2">     return _bootstrap._gcd_import(name[level:], package, level)</span>
+<span class="g g-Whitespace">    </span><span class="mi">128</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span><span class="s2"> </span>
+
+<span class="s2">~\miniconda3\envs\ml_venv\lib\site-packages\keras\optimizers\__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span><span class="s2"> # Imports needed for deserialization.</span>
+<span class="ne">---&gt; </span><span class="mi">25</span><span class="s2"> from keras import backend</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span><span class="s2"> from keras.optimizers.legacy import adadelta as adadelta_legacy</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span><span class="s2"> from keras.optimizers.legacy import adagrad as adagrad_legacy</span>
+
+<span class="s2">~\miniconda3\envs\ml_venv\lib\site-packages\keras</span><span class="se">\b</span><span class="s2">ackend\__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span><span class="s2"> &quot;&quot;&quot;</span><span class="n">AUTOGENERATED</span><span class="o">.</span> <span class="n">DO</span> <span class="n">NOT</span> <span class="n">EDIT</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span><span class="s2"> </span>
+<span class="ne">----&gt; </span><span class="mi">3</span><span class="s2"> from keras.backend import experimental</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> from keras.src.backend import abs</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from keras.src.backend import all</span>
+
+<span class="s2">~\miniconda3\envs\ml_venv\lib\site-packages\keras</span><span class="se">\b</span><span class="s2">ackend\experimental\__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span><span class="s2"> &quot;&quot;&quot;</span><span class="n">AUTOGENERATED</span><span class="o">.</span> <span class="n">DO</span> <span class="n">NOT</span> <span class="n">EDIT</span><span class="o">.</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span><span class="s2"> </span>
+<span class="ne">----&gt; </span><span class="mi">3</span><span class="s2"> from keras.src.backend import disable_tf_random_generator</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span><span class="s2"> from keras.src.backend import enable_tf_random_generator</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from keras.src.backend import is_tf_random_generator_enabled</span>
+
+<span class="s2">~\miniconda3\envs\ml_venv\lib\site-packages\keras\src\__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span><span class="s2"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="kn">from</span> <span class="nn">keras.src</span> <span class="kn">import</span> <span class="n">distribute</span>
+<span class="ne">---&gt; </span><span class="mi">21</span> <span class="kn">from</span> <span class="nn">keras.src</span> <span class="kn">import</span> <span class="n">models</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="kn">from</span> <span class="nn">keras.src.engine.input_layer</span> <span class="kn">import</span> <span class="n">Input</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span> <span class="kn">from</span> <span class="nn">keras.src.engine.sequential</span> <span class="kn">import</span> <span class="n">Sequential</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">models</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> 
+<span class="g g-Whitespace">     </span><span class="mi">17</span> 
+<span class="ne">---&gt; </span><span class="mi">18</span> <span class="kn">from</span> <span class="nn">keras.src.engine.functional</span> <span class="kn">import</span> <span class="n">Functional</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="kn">from</span> <span class="nn">keras.src.engine.sequential</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="kn">from</span> <span class="nn">keras.src.engine.training</span> <span class="kn">import</span> <span class="n">Model</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">engine</span>\<span class="n">functional</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span> <span class="kn">import</span> <span class="nn">tensorflow.compat.v2</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> 
+<span class="ne">---&gt; </span><span class="mi">25</span> <span class="kn">from</span> <span class="nn">keras.src</span> <span class="kn">import</span> <span class="n">backend</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span> <span class="kn">from</span> <span class="nn">keras.src.dtensor</span> <span class="kn">import</span> <span class="n">layout_map</span> <span class="k">as</span> <span class="n">layout_map_lib</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span> <span class="kn">from</span> <span class="nn">keras.src.engine</span> <span class="kn">import</span> <span class="n">base_layer</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">backend</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span> <span class="kn">from</span> <span class="nn">keras.src.distribute</span> <span class="kn">import</span> <span class="n">distribute_coordinator_utils</span> <span class="k">as</span> <span class="n">dc</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span> <span class="kn">from</span> <span class="nn">keras.src.dtensor</span> <span class="kn">import</span> <span class="n">dtensor_api</span> <span class="k">as</span> <span class="n">dtensor</span>
+<span class="ne">---&gt; </span><span class="mi">35</span> <span class="kn">from</span> <span class="nn">keras.src.engine</span> <span class="kn">import</span> <span class="n">keras_tensor</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span> <span class="kn">from</span> <span class="nn">keras.src.utils</span> <span class="kn">import</span> <span class="n">control_flow_util</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="kn">from</span> <span class="nn">keras.src.utils</span> <span class="kn">import</span> <span class="n">object_identity</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">engine</span>\<span class="n">keras_tensor</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="kn">import</span> <span class="nn">tensorflow.compat.v2</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span> 
+<span class="ne">---&gt; </span><span class="mi">19</span> <span class="kn">from</span> <span class="nn">keras.src.utils</span> <span class="kn">import</span> <span class="n">object_identity</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span> 
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="c1"># isort: off</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">utils</span>\<span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">51</span> 
+<span class="g g-Whitespace">     </span><span class="mi">52</span> <span class="c1"># Preprocessing utils</span>
+<span class="ne">---&gt; </span><span class="mi">53</span> <span class="kn">from</span> <span class="nn">keras.src.utils.feature_space</span> <span class="kn">import</span> <span class="n">FeatureSpace</span>
+<span class="g g-Whitespace">     </span><span class="mi">54</span> 
+<span class="g g-Whitespace">     </span><span class="mi">55</span> <span class="c1"># Internal</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">utils</span>\<span class="n">feature_space</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span> 
+<span class="g g-Whitespace">     </span><span class="mi">19</span> <span class="kn">from</span> <span class="nn">keras.src</span> <span class="kn">import</span> <span class="n">backend</span>
+<span class="ne">---&gt; </span><span class="mi">20</span> <span class="kn">from</span> <span class="nn">keras.src.engine</span> <span class="kn">import</span> <span class="n">base_layer</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="kn">from</span> <span class="nn">keras.src.saving</span> <span class="kn">import</span> <span class="n">saving_lib</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="kn">from</span> <span class="nn">keras.src.saving</span> <span class="kn">import</span> <span class="n">serialization_lib</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">engine</span>\<span class="n">base_layer</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span> <span class="kn">from</span> <span class="nn">keras.src.mixed_precision</span> <span class="kn">import</span> <span class="n">policy</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span> <span class="kn">from</span> <span class="nn">keras.src.saving</span> <span class="kn">import</span> <span class="n">serialization_lib</span>
+<span class="ne">---&gt; </span><span class="mi">43</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">layer_serialization</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span> <span class="kn">from</span> <span class="nn">keras.src.utils</span> <span class="kn">import</span> <span class="n">generic_utils</span>
+<span class="g g-Whitespace">     </span><span class="mi">45</span> <span class="kn">from</span> <span class="nn">keras.src.utils</span> <span class="kn">import</span> <span class="n">layer_utils</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">saving</span>\<span class="n">legacy</span>\<span class="n">saved_model</span>\<span class="n">layer_serialization</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">base_serialization</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">constants</span>
+<span class="ne">---&gt; </span><span class="mi">23</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">save_impl</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">serialized_attributes</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span> 
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">saving</span>\<span class="n">legacy</span>\<span class="n">saved_model</span>\<span class="n">save_impl</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy</span> <span class="kn">import</span> <span class="n">saving_utils</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">constants</span>
+<span class="ne">---&gt; </span><span class="mi">34</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">load</span> <span class="k">as</span> <span class="n">keras_load</span>
+<span class="g g-Whitespace">     </span><span class="mi">35</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">serialized_attributes</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span> <span class="kn">from</span> <span class="nn">keras.src.saving.legacy.saved_model</span> <span class="kn">import</span> <span class="n">utils</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">src</span>\<span class="n">saving</span>\<span class="n">legacy</span>\<span class="n">saved_model</span>\<span class="n">load</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span> <span class="kn">from</span> <span class="nn">keras.src.engine</span> <span class="kn">import</span> <span class="n">input_spec</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span> <span class="kn">from</span> <span class="nn">keras.src.optimizers.legacy</span> <span class="kn">import</span> <span class="n">optimizer_v2</span>
+<span class="ne">---&gt; </span><span class="mi">29</span> <span class="kn">from</span> <span class="nn">keras.protobuf</span> <span class="kn">import</span> <span class="n">saved_metadata_pb2</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span> <span class="kn">from</span> <span class="nn">keras.protobuf</span> <span class="kn">import</span> <span class="n">versions_pb2</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span> <span class="kn">from</span> <span class="nn">keras.src.saving</span> <span class="kn">import</span> <span class="n">object_registration</span>
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">protobuf</span>\<span class="n">saved_metadata_pb2</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> 
+<span class="g g-Whitespace">     </span><span class="mi">15</span> 
+<span class="ne">---&gt; </span><span class="mi">16</span> <span class="kn">from</span> <span class="nn">keras.protobuf</span> <span class="kn">import</span> <span class="n">versions_pb2</span> <span class="k">as</span> <span class="n">keras_dot_protobuf_dot_versions__pb2</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> 
+<span class="g g-Whitespace">     </span><span class="mi">18</span> 
+
+<span class="o">~</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">ml_venv</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>\<span class="n">keras</span>\<span class="n">protobuf</span>\<span class="n">versions_pb2</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span>   <span class="n">containing_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">35</span>   <span class="n">fields</span><span class="o">=</span><span class="p">[</span>
+<span class="ne">---&gt; </span><span class="mi">36</span>     <span class="n">_descriptor</span><span class="o">.</span><span class="n">FieldDescriptor</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span>       <span class="n">name</span><span class="o">=</span><span class="s1">&#39;producer&#39;</span><span class="p">,</span> <span class="n">full_name</span><span class="o">=</span><span class="s1">&#39;third_party.py.keras.protobuf.VersionDef.producer&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span>       <span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">cpp_type</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+
+<span class="nn">~\miniconda3\envs\ml_venv\lib\site-packages\google\protobuf\descriptor.py</span> in <span class="ni">__new__</span><span class="nt">(cls, name, full_name, index, number, type, cpp_type, label, default_value, message_type, enum_type, containing_type, is_extension, extension_scope, options, serialized_options, has_default_value, containing_oneof, json_name, file, create_key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">559</span>                 <span class="n">has_default_value</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">containing_oneof</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">json_name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">560</span>                 <span class="n">file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">create_key</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>  <span class="c1"># pylint: disable=redefined-builtin</span>
+<span class="ne">--&gt; </span><span class="mi">561</span>       <span class="n">_message</span><span class="o">.</span><span class="n">Message</span><span class="o">.</span><span class="n">_CheckCalledFromGeneratedFile</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">562</span>       <span class="k">if</span> <span class="n">is_extension</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">563</span>         <span class="k">return</span> <span class="n">_message</span><span class="o">.</span><span class="n">default_pool</span><span class="o">.</span><span class="n">FindExtensionByName</span><span class="p">(</span><span class="n">full_name</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: Descriptors cannot not be created directly.
+<span class="n">If</span> <span class="n">this</span> <span class="n">call</span> <span class="n">came</span> <span class="kn">from</span> <span class="nn">a</span> <span class="n">_pb2</span><span class="o">.</span><span class="n">py</span> <span class="n">file</span><span class="p">,</span> <span class="n">your</span> <span class="n">generated</span> <span class="n">code</span> <span class="ow">is</span> <span class="n">out</span> <span class="n">of</span> <span class="n">date</span> <span class="ow">and</span> <span class="n">must</span> <span class="n">be</span> <span class="n">regenerated</span> <span class="k">with</span> <span class="n">protoc</span> <span class="o">&gt;=</span> <span class="mf">3.19.0</span><span class="o">.</span>
+<span class="n">If</span> <span class="n">you</span> <span class="n">cannot</span> <span class="n">immediately</span> <span class="n">regenerate</span> <span class="n">your</span> <span class="n">protos</span><span class="p">,</span> <span class="n">some</span> <span class="n">other</span> <span class="n">possible</span> <span class="n">workarounds</span> <span class="n">are</span><span class="p">:</span>
+<span class="g g-Whitespace"> </span><span class="mi">1</span><span class="o">.</span> <span class="n">Downgrade</span> <span class="n">the</span> <span class="n">protobuf</span> <span class="n">package</span> <span class="n">to</span> <span class="mf">3.20</span><span class="o">.</span><span class="n">x</span> <span class="ow">or</span> <span class="n">lower</span><span class="o">.</span>
+<span class="g g-Whitespace"> </span><span class="mi">2</span><span class="o">.</span> <span class="n">Set</span> <span class="n">PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION</span><span class="o">=</span><span class="n">python</span> <span class="p">(</span><span class="n">but</span> <span class="n">this</span> <span class="n">will</span> <span class="n">use</span> <span class="n">pure</span><span class="o">-</span><span class="n">Python</span> <span class="n">parsing</span> <span class="ow">and</span> <span class="n">will</span> <span class="n">be</span> <span class="n">much</span> <span class="n">slower</span><span class="p">)</span><span class="o">.</span>
+
+<span class="n">More</span> <span class="n">information</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">developers</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">protocol</span><span class="o">-</span><span class="n">buffers</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">news</span><span class="o">/</span><span class="mi">2022</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">06</span><span class="c1">#python-updates</span>
 </pre></div>
 </div>
 </div>
@@ -2478,7 +2636,7 @@ Best score:  -0.023564338741993603
 <div class="cell_output docutils container">
 </div>
 </div>
-<p>In this experiment, we investigated the impact of data series augmentation on the forecasting of daily demand for truck transport in the USA. We found that duplicating the time series size using a data series augmentation method significantly improved the performance of all models, including NN models. The best performing model, FNN, achieved a MAPE of 0.3, which is a significant improvement over the MAPE of 0.37 from our previous experiment. These results suggest that NN models have the potential to achieve even better performance on this task with more training data.</p>
+<p>In this experiment, we investigated the impact of data series augmentation on the forecasting of daily demand for truck transport in the USA. We found that duplicating the time series size using a data series augmentation method significantly improved the performance of all models, including NN models. The best performing model, FNN, achieved a MAPE of 0.3, which is a significant improvement over the MAPE of 0.4 from our previous experiment. These results suggest that NN models have the potential to achieve even better performance on this task with more training data.</p>
 <p>Future work should focus on gathering more comprehensive and detailed data, as well as exploring different data series augmentation methods. Additionally, it would be interesting to investigate the performance of NN models with different architectures and hyperparameters. By addressing these limitations, we can develop more reliable forecasting models that can provide valuable insights for the optimization of truck transport operations in the USA.</p>
 </section>
 
