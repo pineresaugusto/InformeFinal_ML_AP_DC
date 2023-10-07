@@ -1,0 +1,58 @@
+Traceback (most recent call last):
+  File "C:\Users\USUARIO\miniconda3\envs\ml_venv\lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\USUARIO\miniconda3\envs\ml_venv\lib\site-packages\nbclient\client.py", line 1117, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\USUARIO\miniconda3\envs\ml_venv\lib\site-packages\nbclient\util.py", line 78, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\USUARIO\miniconda3\envs\ml_venv\lib\site-packages\nbclient\util.py", line 57, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\USUARIO\miniconda3\envs\ml_venv\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\Users\USUARIO\miniconda3\envs\ml_venv\lib\site-packages\nbclient\client.py", line 558, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\USUARIO\miniconda3\envs\ml_venv\lib\site-packages\nbclient\client.py", line 862, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "C:\Users\USUARIO\miniconda3\envs\ml_venv\lib\site-packages\nbclient\client.py", line 765, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Read data
+lavb_8h = pd.read_parquet("lavb_8h.parquet")
+lavb_8h.sort_values(by='date', ascending=True, inplace=True)
+lavb_8h.head(5)
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mImportError[0m                               Traceback (most recent call last)
+[1;32m~\AppData\Local\Temp/ipykernel_141196/1720067372.py[0m in [0;36m<module>[1;34m[0m
+[0;32m      1[0m [1;31m# Read data[0m[1;33m[0m[1;33m[0m[0m
+[1;32m----> 2[1;33m [0mlavb_8h[0m [1;33m=[0m [0mpd[0m[1;33m.[0m[0mread_parquet[0m[1;33m([0m[1;34m"lavb_8h.parquet"[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m      3[0m [0mlavb_8h[0m[1;33m.[0m[0msort_values[0m[1;33m([0m[0mby[0m[1;33m=[0m[1;34m'date'[0m[1;33m,[0m [0mascending[0m[1;33m=[0m[1;32mTrue[0m[1;33m,[0m [0minplace[0m[1;33m=[0m[1;32mTrue[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0;32m      4[0m [0mlavb_8h[0m[1;33m.[0m[0mhead[0m[1;33m([0m[1;36m5[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\pandas\io\parquet.py[0m in [0;36mread_parquet[1;34m(path, engine, columns, storage_options, use_nullable_dtypes, **kwargs)[0m
+[0;32m    491[0m     [0mDataFrame[0m[1;33m[0m[1;33m[0m[0m
+[0;32m    492[0m     """
+[1;32m--> 493[1;33m     [0mimpl[0m [1;33m=[0m [0mget_engine[0m[1;33m([0m[0mengine[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0m[0;32m    494[0m [1;33m[0m[0m
+[0;32m    495[0m     return impl.read(
+
+[1;32m~\miniconda3\envs\ml_venv\lib\site-packages\pandas\io\parquet.py[0m in [0;36mget_engine[1;34m(engine)[0m
+[0;32m     51[0m                 [0merror_msgs[0m [1;33m+=[0m [1;34m"\n - "[0m [1;33m+[0m [0mstr[0m[1;33m([0m[0merr[0m[1;33m)[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     52[0m [1;33m[0m[0m
+[1;32m---> 53[1;33m         raise ImportError(
+[0m[0;32m     54[0m             [1;34m"Unable to find a usable engine; "[0m[1;33m[0m[1;33m[0m[0m
+[0;32m     55[0m             [1;34m"tried using: 'pyarrow', 'fastparquet'.\n"[0m[1;33m[0m[1;33m[0m[0m
+
+[1;31mImportError[0m: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+
