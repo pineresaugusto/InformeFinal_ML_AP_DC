@@ -2,8 +2,6 @@
 
 Freight demand forecasting is a crucial task for the trucking industry, as it enables decision-makers to allocate resources, optimize routes and vehicle usage, thereby directly contributing to cost savings and environmental sustainability. However, the lack of sufficient data points can pose a challenge to obtaining accurate forecasts using neural networks.
 
-This paper proposes a data augmentation approach to compare forecasts using conventional ARIMA and SARIMA models for the regular time series and the augmented time series, as well as three types of neural networks: fully connected neural networks (FNNs), long short-term memory (LSTM) networks, and gated recurrent unit (GRU) encoder networks.
-
 The data augmentation approach involves synthesizing new data points from the existing data set by adding random noise or by applying transformations such as shifting, scaling, and rotating the data. This helps to increase the size and diversity of the data set, which can improve the performance of neural network models.
 
 The results of the experiments show that the data augmentation approach can significantly improve the accuracy of neural network forecasts, making them comparable to or even better than the forecasts of conventional time series models.
@@ -31,13 +29,13 @@ Generate new data points by averaging the next day's forecasted value with the p
 This is a simple but effective data augmentation technique that can be used to increase the size of the training data set without having to collect new data. It is valid because it creates new data points that are representative of the real-world data. By averaging the next day's forecasted value with the previous day's true data value, we are creating new data points that reflect the natural variation in freight demand.
 
 ### Model Training
-Train the neural network models on the augmented training data set.
+Train the neural network models on both data sets.
 
 Neural networks are a type of machine learning model that can be trained to learn complex patterns in data. They are well-suited for freight demand forecasting because they can learn the relationships between the various factors that influence freight demand.
 
-### Use parameter tuning optimization based on MAPE to find the best parameters for each model.
+### Use parameter tuning optimization based on MSE to find the best parameters for each model.
 
-Parameter tuning is the process of adjusting the hyperparameters of a machine learning model to improve its performance. MAPE (mean absolute percentage error) is a common metric used to evaluate the performance of forecasting models.
+Parameter tuning is the process of adjusting the hyperparameters of a machine learning model to improve its performance. MSE (mean square error) is a common metric used to evaluate the performance of forecasting models. It is calculated by taking the average of the squared differences between the predicted and actual values. The lower the MSE, the better the model performs.
 
 ### Evaluate the performance of the trained models on the testing set.
 
@@ -59,13 +57,13 @@ Data augmentation is valid for freight demand forecasting because it creates new
 
 In addition, data augmentation can help to reduce the risk of overfitting. Overfitting occurs when a machine learning model learns the training data too well and is unable to generalize to new data. By increasing the size and diversity of the training data set with data augmentation, we can help to reduce the risk of overfitting.
 
-### Results and Discussion
+### Results
 
 In this section, we present the results of our experiments and discuss the implications of our findings.
 
 Despite the limited length of our data set, we found that data augmentation significantly improved the performance of the neural network models for freight demand forecasting.
 
-This improvement in performance suggests that neural network models are now a better alternative for freight demand forecasting than conventional forecasting methods. Neural network models are able to learn more complex patterns in the data, which allows them to make more accurate forecasts, especially when the data set is small.
+This improvement in performance suggests that neural network models are now a better alternative for freight demand forecasting, they are able to learn more complex patterns in the data, which allows them to make more accurate forecasts, especially when the data set is small.
 
 In the following sections, we will visually analyze the results of our experiments and discuss their implications in more detail.
 
