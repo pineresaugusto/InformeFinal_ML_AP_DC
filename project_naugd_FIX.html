@@ -62,9 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'project_naugd';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'project_naugd_FIX';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Improved Forecasting Method (Data Augmentation and AutoML)" href="project_augd_test_FIX.html" />
+    <link rel="prev" title="Introduction" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -164,8 +166,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="project_naugd_FIX.html">Regular Time Series Forecasting</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Regular Time Series Forecasting</a></li>
 
 
 
@@ -255,7 +257,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fproject_naugd.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fproject_naugd_FIX.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -285,7 +287,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/project_naugd.ipynb" target="_blank"
+      <li><a href="_sources/project_naugd_FIX.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -381,7 +383,6 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#knn-model">KNN Model</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ridge">Ridge</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#lasso">Lasso</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes">Naive Bayes</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#xgboost">XGBoost</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#svm">SVM</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mlp">MLP</a></li>
@@ -443,7 +444,7 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_129916</span><span class="o">/</span><span class="mf">1135909557.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_122412</span><span class="o">/</span><span class="mf">1135909557.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_percentage_error</span>
 <span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="ne">---&gt; </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
@@ -841,7 +842,7 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/838150eecd080232d3f330c03574943ca8bde930c483e14b5f1a22f8aa4b071d.png" src="_images/838150eecd080232d3f330c03574943ca8bde930c483e14b5f1a22f8aa4b071d.png" />
+<img alt="_images/a21f9ccadf06443bd33acfbc86f7cfaabdf27d6d0a72651bd2db17a0ccc1b21e.png" src="_images/a21f9ccadf06443bd33acfbc86f7cfaabdf27d6d0a72651bd2db17a0ccc1b21e.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -851,10 +852,10 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;module &#39;matplotlib.pyplot&#39; from &#39;c:\\Users\\USUARIO\\anaconda3\\envs\\Augusto\\lib\\site-packages\\matplotlib\\pyplot.py&#39;&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;module &#39;matplotlib.pyplot&#39; from &#39;c:\\Users\\coold\\anaconda3\\lib\\site-packages\\matplotlib\\pyplot.py&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/0b1f9040a21757183e9a89cea42dad9bfb6ca510c1a10881ece5ba3352d49ba1.png" src="_images/0b1f9040a21757183e9a89cea42dad9bfb6ca510c1a10881ece5ba3352d49ba1.png" />
+<img alt="_images/836ebb25cf55ee377d19fc657e87c276a9f8c56c54809046b8e4a4d9adc500ec.png" src="_images/836ebb25cf55ee377d19fc657e87c276a9f8c56c54809046b8e4a4d9adc500ec.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1082,7 +1083,7 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/a52b127e5723748d45ecae1ec3bb53421f3c80950c061e89177c654fb9bf2e3b.png" src="_images/a52b127e5723748d45ecae1ec3bb53421f3c80950c061e89177c654fb9bf2e3b.png" />
+<img alt="_images/f4c14e1a637719722ea30921505e2fbcf23a84788de0eb1d9d7a94cdcf9bd428.png" src="_images/f4c14e1a637719722ea30921505e2fbcf23a84788de0eb1d9d7a94cdcf9bd428.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1107,7 +1108,7 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/5209bfd6e451ca0ece043590030b4527dcf149f58387a02497ba8b255dec555b.png" src="_images/5209bfd6e451ca0ece043590030b4527dcf149f58387a02497ba8b255dec555b.png" />
+<img alt="_images/f727bba449bd322a813d2bf906e80e49fff89ab5bd4cb3767577d3c20568bd8d.png" src="_images/f727bba449bd322a813d2bf906e80e49fff89ab5bd4cb3767577d3c20568bd8d.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1132,7 +1133,7 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/04e0306825fcb18f790bae817ab6b0e20b4d9d0b5d9739d25692d14242e13abd.png" src="_images/04e0306825fcb18f790bae817ab6b0e20b4d9d0b5d9739d25692d14242e13abd.png" />
+<img alt="_images/a0942a71a128522f9bf1049be9f95861f2d4feb0f8e2cfa00122fbc88050c5d5.png" src="_images/a0942a71a128522f9bf1049be9f95861f2d4feb0f8e2cfa00122fbc88050c5d5.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1157,7 +1158,7 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/9e6d07b59e4ab79a507fc0c17c4dad2dd07f026960800d3d54721e3d2f902a29.png" src="_images/9e6d07b59e4ab79a507fc0c17c4dad2dd07f026960800d3d54721e3d2f902a29.png" />
+<img alt="_images/efdc507ffb0da0d47d538c6578604410754cf62bd3899be338ddfb98f4e70b1e.png" src="_images/efdc507ffb0da0d47d538c6578604410754cf62bd3899be338ddfb98f4e70b1e.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1199,7 +1200,7 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/72316326e765abc60fd75edfa1099ecba3223f726a6a3c060275ffdfd663256f.png" src="_images/72316326e765abc60fd75edfa1099ecba3223f726a6a3c060275ffdfd663256f.png" />
+<img alt="_images/a0ee18f2337cec18972f43c3295b4063d74b10af9a9e0d938413ba8c399f6931.png" src="_images/a0ee18f2337cec18972f43c3295b4063d74b10af9a9e0d938413ba8c399f6931.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1594,9 +1595,10 @@ Best score:  -3222.5876841965273
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354}]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354, &#39;R2&#39;: -1295.5237527506472}]
 </pre></div>
 </div>
+<img alt="_images/8f42fa4f83792dfc34d398e25a794da814eb4f913114b059943b7f84e194c66a.png" src="_images/8f42fa4f83792dfc34d398e25a794da814eb4f913114b059943b7f84e194c66a.png" />
 </div>
 </div>
 </section>
@@ -1661,9 +1663,10 @@ Best score:  -2704.997285950826
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011}]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354, &#39;R2&#39;: -1295.5237527506472}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011, &#39;R2&#39;: -1448.867944346486}]
 </pre></div>
 </div>
+<img alt="_images/0f195c5c3c8224180b1f2b230430f517e11fae387c6fef04181ddc19aa3e2950.png" src="_images/0f195c5c3c8224180b1f2b230430f517e11fae387c6fef04181ddc19aa3e2950.png" />
 </div>
 </div>
 </section>
@@ -1729,72 +1732,10 @@ Best score:  -2717.625599038759
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485}]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354, &#39;R2&#39;: -1295.5237527506472}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011, &#39;R2&#39;: -1448.867944346486}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485, &#39;R2&#39;: -1457.7905125089944}]
 </pre></div>
 </div>
-</div>
-</div>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="naive-bayes">
-<h1>Naive Bayes<a class="headerlink" href="#naive-bayes" title="Permalink to this heading">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Apply Naive Bayes to forecast my time series (available) tunning hyperparamets without cross validation</span>
-<span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;naive_model_naugd.pkl&quot;</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">):</span>
-    
-    <span class="n">grid_nb</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;naive_model_naugd.pkl&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">))</span>
-    
-<span class="k">else</span><span class="p">:</span>
-    
-    <span class="n">nb</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-    <span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;var_smoothing&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1e-09</span><span class="p">,</span> <span class="mf">1e-08</span><span class="p">,</span> <span class="mf">1e-07</span><span class="p">,</span> <span class="mf">1e-06</span><span class="p">,</span> <span class="mf">1e-05</span><span class="p">]}</span>
-    
-    <span class="n">grid_nb</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">TimeSeriesSplit</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">grid_nb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-    
-    <span class="c1"># Export model to pickle</span>
-    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">grid_nb</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;naive_model_naugd.pkl&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">))</span>
-    
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best parameters: &quot;</span><span class="p">,</span> <span class="n">grid_nb</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best score: &quot;</span><span class="p">,</span> <span class="n">grid_nb</span><span class="o">.</span><span class="n">best_score_</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best parameters:  {&#39;var_smoothing&#39;: 1e-05}
-Best score:  -6869.128571428571
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate metrics</span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">grid_nb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-
-<span class="c1"># Metrics</span>
-<span class="n">mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-<span class="n">mape</span> <span class="o">=</span> <span class="n">mean_absolute_percentage_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-<span class="n">r2</span> <span class="o">=</span> <span class="n">grid_nb</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="n">models_metrics</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;Model&#39;</span><span class="p">:</span> <span class="s1">&#39;Naive Bayes&#39;</span><span class="p">,</span> <span class="s1">&#39;MSE&#39;</span><span class="p">:</span> <span class="n">mse</span><span class="p">,</span> <span class="s1">&#39;RMSE&#39;</span><span class="p">:</span><span class="n">mse</span><span class="o">**</span><span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;MAPE&#39;</span><span class="p">:</span> <span class="n">mape</span><span class="p">,</span> <span class="s1">&#39;R2&#39;</span><span class="p">:</span> <span class="n">r2</span><span class="p">})</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">models_metrics</span><span class="p">)</span>
-
-<span class="c1">#Plot predictions vs real values but with matplotlib</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X_test</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Real&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X_test</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Predicción&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Available&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Predicción vs Real (Naive Bayes)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485}, {&#39;Model&#39;: &#39;Naive Bayes&#39;, &#39;MSE&#39;: 1646.1860465116279, &#39;RMSE&#39;: 40.57321834057076, &#39;MAPE&#39;: 0.4209167208472928}]
-</pre></div>
-</div>
+<img alt="_images/b7c85a99f473d315f5ffb0c56c0097f0e3dd0ce6aa412bc52f8b513ecc88b3f6.png" src="_images/b7c85a99f473d315f5ffb0c56c0097f0e3dd0ce6aa412bc52f8b513ecc88b3f6.png" />
 </div>
 </div>
 </section>
@@ -1859,9 +1800,10 @@ Best score:  -4063.5291337231256
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485}, {&#39;Model&#39;: &#39;Naive Bayes&#39;, &#39;MSE&#39;: 1646.1860465116279, &#39;RMSE&#39;: 40.57321834057076, &#39;MAPE&#39;: 0.4209167208472928}, {&#39;Model&#39;: &#39;XGBoost&#39;, &#39;MSE&#39;: 1502.7373898429344, &#39;RMSE&#39;: 38.76515690466033, &#39;MAPE&#39;: 0.43473268232847584}]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354, &#39;R2&#39;: -1295.5237527506472}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011, &#39;R2&#39;: -1448.867944346486}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485, &#39;R2&#39;: -1457.7905125089944}, {&#39;Model&#39;: &#39;XGBoost&#39;, &#39;MSE&#39;: 1502.7373898429344, &#39;RMSE&#39;: 38.76515690466033, &#39;MAPE&#39;: 0.43473268232847584, &#39;R2&#39;: -1502.7373898429344}]
 </pre></div>
 </div>
+<img alt="_images/ecdd792f242d9345a92f560a130586508d97118e7a16585c5c4449e30cc14490.png" src="_images/ecdd792f242d9345a92f560a130586508d97118e7a16585c5c4449e30cc14490.png" />
 </div>
 </div>
 </section>
@@ -1927,9 +1869,10 @@ Best score:  -2875.0486343630682
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485}, {&#39;Model&#39;: &#39;Naive Bayes&#39;, &#39;MSE&#39;: 1646.1860465116279, &#39;RMSE&#39;: 40.57321834057076, &#39;MAPE&#39;: 0.4209167208472928}, {&#39;Model&#39;: &#39;XGBoost&#39;, &#39;MSE&#39;: 1502.7373898429344, &#39;RMSE&#39;: 38.76515690466033, &#39;MAPE&#39;: 0.43473268232847584}, {&#39;Model&#39;: &#39;SVM&#39;, &#39;MSE&#39;: 1567.699634688578, &#39;RMSE&#39;: 39.5941868800027, &#39;MAPE&#39;: 0.48970962923289785}]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354, &#39;R2&#39;: -1295.5237527506472}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011, &#39;R2&#39;: -1448.867944346486}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485, &#39;R2&#39;: -1457.7905125089944}, {&#39;Model&#39;: &#39;XGBoost&#39;, &#39;MSE&#39;: 1502.7373898429344, &#39;RMSE&#39;: 38.76515690466033, &#39;MAPE&#39;: 0.43473268232847584, &#39;R2&#39;: -1502.7373898429344}, {&#39;Model&#39;: &#39;SVM&#39;, &#39;MSE&#39;: 1567.699634688578, &#39;RMSE&#39;: 39.5941868800027, &#39;MAPE&#39;: 0.48970962923289785, &#39;R2&#39;: -1567.699634688578}]
 </pre></div>
 </div>
+<img alt="_images/8979b8cd8d24dcfdcdfe580f00079801fb65a267d96061fd76c85c611d5e1590.png" src="_images/8979b8cd8d24dcfdcdfe580f00079801fb65a267d96061fd76c85c611d5e1590.png" />
 </div>
 </div>
 </section>
@@ -1998,9 +1941,10 @@ Best score:  -2579.6601437229
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485}, {&#39;Model&#39;: &#39;Naive Bayes&#39;, &#39;MSE&#39;: 1646.1860465116279, &#39;RMSE&#39;: 40.57321834057076, &#39;MAPE&#39;: 0.4209167208472928}, {&#39;Model&#39;: &#39;XGBoost&#39;, &#39;MSE&#39;: 1502.7373898429344, &#39;RMSE&#39;: 38.76515690466033, &#39;MAPE&#39;: 0.43473268232847584}, {&#39;Model&#39;: &#39;SVM&#39;, &#39;MSE&#39;: 1567.699634688578, &#39;RMSE&#39;: 39.5941868800027, &#39;MAPE&#39;: 0.48970962923289785}, {&#39;Model&#39;: &#39;MLP&#39;, &#39;MSE&#39;: 1448.0437828010265, &#39;RMSE&#39;: 38.05317046976541, &#39;MAPE&#39;: 0.45151003886932595}]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;Model&#39;: &#39;KNN&#39;, &#39;MSE&#39;: 1295.5237527506472, &#39;RMSE&#39;: 35.993384847088876, &#39;MAPE&#39;: 0.40607448792176354, &#39;R2&#39;: -1295.5237527506472}, {&#39;Model&#39;: &#39;Ridge&#39;, &#39;MSE&#39;: 1448.867944346486, &#39;RMSE&#39;: 38.063998007914066, &#39;MAPE&#39;: 0.4522864563680011, &#39;R2&#39;: -1448.867944346486}, {&#39;Model&#39;: &#39;Lasso&#39;, &#39;MSE&#39;: 1457.7905125089944, &#39;RMSE&#39;: 38.18102293691192, &#39;MAPE&#39;: 0.45454360898826485, &#39;R2&#39;: -1457.7905125089944}, {&#39;Model&#39;: &#39;XGBoost&#39;, &#39;MSE&#39;: 1502.7373898429344, &#39;RMSE&#39;: 38.76515690466033, &#39;MAPE&#39;: 0.43473268232847584, &#39;R2&#39;: -1502.7373898429344}, {&#39;Model&#39;: &#39;SVM&#39;, &#39;MSE&#39;: 1567.699634688578, &#39;RMSE&#39;: 39.5941868800027, &#39;MAPE&#39;: 0.48970962923289785, &#39;R2&#39;: -1567.699634688578}, {&#39;Model&#39;: &#39;MLP&#39;, &#39;MSE&#39;: 1448.0437828010265, &#39;RMSE&#39;: 38.05317046976541, &#39;MAPE&#39;: 0.45151003886932595, &#39;R2&#39;: -1448.0437828010265}]
 </pre></div>
 </div>
+<img alt="_images/047cecfba387bd87452ddc77f87aa7e5129f25e87817543095821b3b3cb02c70.png" src="_images/047cecfba387bd87452ddc77f87aa7e5129f25e87817543095821b3b3cb02c70.png" />
 </div>
 </div>
 </section>
@@ -2036,6 +1980,7 @@ Best score:  -2579.6601437229
       <th>MSE</th>
       <th>RMSE</th>
       <th>MAPE</th>
+      <th>R2</th>
     </tr>
   </thead>
   <tbody>
@@ -2045,6 +1990,7 @@ Best score:  -2579.6601437229
       <td>1295.523753</td>
       <td>35.993385</td>
       <td>0.406074</td>
+      <td>-1295.523753</td>
     </tr>
     <tr>
       <th>1</th>
@@ -2052,6 +1998,7 @@ Best score:  -2579.6601437229
       <td>1448.867944</td>
       <td>38.063998</td>
       <td>0.452286</td>
+      <td>-1448.867944</td>
     </tr>
     <tr>
       <th>2</th>
@@ -2059,34 +2006,31 @@ Best score:  -2579.6601437229
       <td>1457.790513</td>
       <td>38.181023</td>
       <td>0.454544</td>
+      <td>-1457.790513</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Naive Bayes</td>
-      <td>1646.186047</td>
-      <td>40.573218</td>
-      <td>0.420917</td>
-    </tr>
-    <tr>
-      <th>4</th>
       <td>XGBoost</td>
       <td>1502.737390</td>
       <td>38.765157</td>
       <td>0.434733</td>
+      <td>-1502.737390</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>4</th>
       <td>SVM</td>
       <td>1567.699635</td>
       <td>39.594187</td>
       <td>0.489710</td>
+      <td>-1567.699635</td>
     </tr>
     <tr>
-      <th>6</th>
+      <th>5</th>
       <td>MLP</td>
       <td>1448.043783</td>
       <td>38.053170</td>
       <td>0.451510</td>
+      <td>-1448.043783</td>
     </tr>
   </tbody>
 </table>
@@ -2127,6 +2071,9 @@ Best score:  -2579.6601437229
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/3f425111013386dfea7892773cf039456c246b52fc26112951dafc69cb2a7b42.png" src="_images/3f425111013386dfea7892773cf039456c246b52fc26112951dafc69cb2a7b42.png" />
+</div>
 </div>
 <p>Summing things up, our attempt to forecast the daily demand for truck transport in the USA was hindered by the limited data available in our time series. Despite employing a variety of models, including KNN, Naive Bayes, XGBoost, SVM, and MLP among others, the most successful one, KNN, yielded a Mean Absolute Percentage Error (MAPE) of 0.40. While this performance is suboptimal, it aligns with the challenges posed by the insufficient dataset. Recognizing the impact of data scarcity on our results, future endeavors should focus on gathering more comprehensive and detailed data to enhance the accuracy of our predictions. This would undoubtedly lead to more reliable forecasts, providing valuable insights for the optimization of truck transport operations in the USA.</p>
 </section>
@@ -2161,6 +2108,24 @@ Best score:  -2579.6601437229
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="project_augd_test_FIX.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Improved Forecasting Method (Data Augmentation and AutoML)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -2180,7 +2145,6 @@ Best score:  -2579.6601437229
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#knn-model">KNN Model</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ridge">Ridge</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#lasso">Lasso</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#naive-bayes">Naive Bayes</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#xgboost">XGBoost</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#svm">SVM</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mlp">MLP</a></li>
